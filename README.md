@@ -41,10 +41,11 @@ SkillBridge/
 
 ## Test Credentials
 
-| Role     | Email              | Password    |
-|----------|--------------------|-------------|
-| Learner  | alice@example.com  | password123 |
-| Employer | hr@techrw.com      | password123 |
+| Role     | Email                  | Password    |
+|----------|------------------------|-------------|
+| Learner  | shyaka@skillbridge.rw  | password123 |
+| Employer | hr@tech.rw           | password123 |
+| Admin    | admin@skillbridge.rw   | password123 |
 
 ## API Endpoints
 
