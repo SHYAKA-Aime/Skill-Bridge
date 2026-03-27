@@ -88,7 +88,7 @@ function AppLayout() {
 function App() {
   return (
     <ErrorBoundary>
-      <Router>
+      <Router basename="/Skill-Bridge">
         <AppLayout />
       </Router>
     </ErrorBoundary>

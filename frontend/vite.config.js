@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/Skill-Bridge/',
   plugins: [
     react(),
     VitePWA({
@@ -17,8 +17,8 @@ export default defineConfig({
         theme_color: '#0F172A',
         background_color: '#FAFAFA',
         display: 'standalone',
-        scope: '/',
-        start_url: '/',
+        scope: '/Skill-Bridge/',
+        start_url: '/Skill-Bridge/',
         icons: [
           {
             src: 'favicon.svg',
