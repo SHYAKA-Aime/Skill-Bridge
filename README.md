@@ -46,36 +46,6 @@ SkillBridge/
 | Learner  | alice@example.com  | password123 |
 | Employer | hr@techrw.com      | password123 |
 
-## Deployment
-
-### Backend → Render
-
-1. Push the repo to GitHub
-2. Create a **New Web Service** on [Render](https://render.com)
-3. Connect your GitHub repo
-4. Configure:
-   - **Root Directory:** `backend`
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `gunicorn app:create_app()`
-   - **Environment Variables:**
-     - `JWT_SECRET_KEY` - a secure random string
-     - `DATABASE_URL` - your PostgreSQL connection string (Render provides one)
-5. Deploy
-
-### Frontend → GitHub Pages
-
-1. Update `vite.config.js` - set `base: '/SkillBridge/'`
-2. Update `api.js` - point `baseURL` to your Render backend URL
-3. Build and deploy:
-```bash
-cd frontend
-npm run build
-npx gh-pages -d dist
-```
-4. In GitHub repo settings -> Pages -> set source to `gh-pages` branch
-
-> **Note:** For client-side routing to work on GitHub Pages, add a `404.html` that redirects to `index.html`. The `gh-pages` package handles this automatically when configured.
-
 ## API Endpoints
 
 | Method | Endpoint                   | Description         |
