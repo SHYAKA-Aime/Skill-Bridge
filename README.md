@@ -1,114 +1,61 @@
 # SkillBridge Rwanda
 
-SkillBridge Rwanda is a Progressive Web Application (PWA) that connects unemployed and underemployed Rwandan youth with market-relevant digital skills training and employment opportunities.
+SkillBridge Rwanda is a high-performance **Progressive Web Application (PWA)** engineered to connect Rwanda's emerging tech talent with world-class employers. Built with a focus on verified achievement and seamless recruitment pipelines.
 
-## Live Demo
+## 🚀 Key Features
 
-| Service  | URL |
-|----------|-----|
-| Frontend | [https://your-username.github.io/SkillBridge](https://your-username.github.io/SkillBridge) |
-| Backend  | [https://skillbridge-api.onrender.com](https://skillbridge-api.onrender.com) |
+- **Multi-Role Ecosystem**: Tailored experiences for **Learners**, **Employers**, and **System Admins**.
+- **Verified SkillBadges**: Authentic academic validation where employers see exactly which courses a candidate has completed on-platform.
+- **Premium UX/UI**: Modern glassmorphism design, smooth micro-animations, and custom modal systems (no native browser dialogs).
+- **Recruitment Engine**: Full Applicant Tracking System (ATS) for employers to manage candidates from discovery to interview.
+- **Offline Ready**: Full PWA support with service workers for unreliable connectivity environments.
+100% professional localization.
 
-## Tech Stack
+## 🛠 Tech Stack
 
 | Layer    | Technology |
 |----------|------------|
-| Frontend | React 19, Vite 8, Recharts, Lucide Icons, Vanilla CSS |
-| Backend  | Flask, Flask-JWT-Extended, SQLAlchemy, Flask-CORS |
-| Database | SQLite (dev) / PostgreSQL (production) |
-| PWA      | vite-plugin-pwa, Workbox |
-| Hosting  | GitHub Pages (frontend), Render (backend) |
+| **Frontend** | React 19, Vite, Lucide Icons, Recharts (Analytics) |
+| **Logic**    | Custom Hooks, Mock Service Layer (LocalStorage Persistent) |
+| **Styling**  | Vanilla CSS (Stitch UI Design System) |
+| **PWA**      | vite-plugin-pwa, Workbox |
 
-## Project Structure
+## 📦 Project Architecture
 
 ```
 SkillBridge/
-├── backend/          # Flask REST API
-│   ├── app.py        # App factory & config
-│   ├── models.py     # SQLAlchemy models
-│   ├── seed.py       # Test data seeder
-│   └── routes/
-│       ├── auth.py   # Login & registration
-│       ├── course.py # Course endpoints
-│       └── job.py    # Job endpoints
-└── frontend/         # React SPA (Vite)
+├── root/             # Global configuration & deployment
+├── backend/          # Flask REST API (Python)
+└── frontend/         # React SPA (Vite/PWA)
     ├── src/
-    │   ├── pages/    # Home, Login, Register, Dashboard, Courses, Jobs
-    │   ├── components/ # Navbar, DashboardLayout
-    │   └── services/ # Axios API client
-    └── vite.config.js # PWA & build config
+    │   ├── pages/    # Role-specific dashboard logic
+    │   ├── components/ # Shared Layouts & Custom Modals
+    │   └── services/ # Mock API & Data Persistence
 ```
 
-## Local Development
+## 🚥 Getting Started
 
-Start both servers in separate terminals:
-
-### 1. Backend (Flask)
+### 1. Installation
 ```bash
-cd backend
-source venv/bin/activate
-pip install -r requirements.txt
-python3 seed.py   # Seed test data (first time only)
-python3 app.py
-```
-Backend runs at `http://localhost:5000`
-
-### 2. Frontend (React + Vite)
-```bash
-cd frontend
+git clone https://github.com/SHYAKA-Aime/Skill-Bridge.git
+cd Skill-Bridge/frontend
 npm install
+```
+
+### 2. Development
+```bash
 npm run dev
 ```
-Frontend runs at `http://localhost:5173`
+The app will be available at `http://localhost:5173`.
 
-## Test Credentials
+## 🧪 Developer Test Credentials
 
-| Role     | Email              | Password    |
-|----------|--------------------|-------------|
-| Learner  | alice@example.com  | password123 |
-| Employer | hr@techrw.com      | password123 |
+| Role      | Email                  | Password    |
+|-----------|------------------------|-------------|
+| **Learner**   | `shyaka@skillbridge.rw` | `password123` |
+| **Employer**  | `hr@tech.rw`           | `password123` |
+| **Admin**     | `admin@skillbridge.rw` | `password123` |
 
-## Deployment
+---
 
-### Backend → Render
-
-1. Push the repo to GitHub
-2. Create a **New Web Service** on [Render](https://render.com)
-3. Connect your GitHub repo
-4. Configure:
-   - **Root Directory:** `backend`
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `gunicorn app:create_app()`
-   - **Environment Variables:**
-     - `JWT_SECRET_KEY` — a secure random string
-     - `DATABASE_URL` — your PostgreSQL connection string (Render provides one)
-5. Deploy
-
-### Frontend → GitHub Pages
-
-1. Update `vite.config.js` — set `base: '/SkillBridge/'`
-2. Update `api.js` — point `baseURL` to your Render backend URL
-3. Build and deploy:
-```bash
-cd frontend
-npm run build
-npx gh-pages -d dist
-```
-4. In GitHub repo settings → Pages → set source to `gh-pages` branch
-
-> **Note:** For client-side routing to work on GitHub Pages, add a `404.html` that redirects to `index.html`. The `gh-pages` package handles this automatically when configured.
-
-## API Endpoints
-
-| Method | Endpoint                   | Description         |
-|--------|----------------------------|---------------------|
-| POST   | `/api/auth/login`          | User login (JWT)    |
-| POST   | `/api/auth/register/learner`  | Register learner |
-| POST   | `/api/auth/register/employer` | Register employer|
-| GET    | `/api/courses/`            | List all courses    |
-| GET    | `/api/jobs/`               | List all jobs       |
-| GET    | `/api/health`              | Health check        |
-
-## License
-
-This project was built for the African Leadership University (ALU) coursework.
+Built with ❤️ for **SkillBridge Rwanda**.
