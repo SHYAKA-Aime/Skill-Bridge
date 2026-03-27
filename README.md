@@ -39,28 +39,6 @@ SkillBridge/
     \-- vite.config.js # PWA & build config
 ```
 
-## Local Development
-
-Start both servers in separate terminals:
-
-### 1. Backend (Flask)
-```bash
-cd backend
-source venv/bin/activate
-pip install -r requirements.txt
-python3 seed.py   # Seed test data (first time only)
-python3 app.py
-```
-Backend runs at `http://localhost:5000`
-
-### 2. Frontend (React + Vite)
-```bash
-cd frontend
-npm install
-npm run dev
-```
-Frontend runs at `http://localhost:5173`
-
 ## Test Credentials
 
 | Role     | Email              | Password    |
