@@ -4,20 +4,15 @@ SkillBridge Rwanda is a Progressive Web Application (PWA) that connects unemploy
 
 ## Live Demo
 
-| Service  | URL |
-|----------|-----|
-| Frontend | [https://your-username.github.io/SkillBridge](https://your-username.github.io/SkillBridge) |
-| Backend  | [https://skillbridge-api.onrender.com](https://skillbridge-api.onrender.com) |
+Professional Platform URL: [https://shyaka-aime.github.io/Skill-Bridge/](https://shyaka-aime.github.io/Skill-Bridge/)
 
 ## Tech Stack
 
-| Layer    | Technology |
-|----------|------------|
-| Frontend | React 19, Vite 8, Recharts, Lucide Icons, Vanilla CSS |
-| Backend  | Flask, Flask-JWT-Extended, SQLAlchemy, Flask-CORS |
-| Database | SQLite (dev) / PostgreSQL (production) |
-| PWA      | vite-plugin-pwa, Workbox |
-| Hosting  | GitHub Pages (frontend), Render (backend) |
+| Layer | Technology |
+|---|---|
+| Frontend | React 19, Vite, Lucide Icons, Recharts |
+| Features | PWA (Offline Ready), Multi-Role Dashboards, Custom Modals |
+| Logic | Persistent Mock API, Vanilla CSS (Stitch UI) |
 
 ## Project Structure
 
