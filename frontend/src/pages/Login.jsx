@@ -101,13 +101,6 @@ export default function Login() {
             title={feedback?.title}
             message={feedback?.message}
           />
-          
-          {/* Developer Test Credentials helper */}
-          <div style={{ marginTop: '4rem', padding: '1.5rem', backgroundColor: 'transparent', borderRadius: '12px', border: '1px dashed var(--color-border)', fontSize: '0.75rem' }}>
-            <p style={{ fontWeight: '600', color: 'var(--color-text-heading)', marginBottom: '0.5rem' }}>Developer Test Credentials</p>
-            <p style={{ color: 'var(--color-text-muted)', margin: 0 }}>Learner Account: shyaka@skillbridge.rw / password123</p>
-            <p style={{ color: 'var(--color-text-muted)', margin: 0 }}>Employer Account: hr@tech.rw / password123</p>
-          </div>
         </div>
       </div>
     </div>
