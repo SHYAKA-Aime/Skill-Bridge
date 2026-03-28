@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, BookOpen, Briefcase, MessageSquare, 
   Settings, Bell, Search, Users, PieChart, ShieldCheck, UserCircle
@@ -10,13 +10,14 @@ import { FeedbackModal } from './Modals';
 export default function DashboardLayout({ children }) {
   const [feedback, setFeedback] = React.useState(null);
   const location = useLocation();
+  const navigate = useNavigate();
   const rawUser = localStorage.getItem('user');
   const user = rawUser ? JSON.parse(rawUser) : null;
 
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
-    window.location.href = '/login'; 
+    navigate('/login');
   };
 
   if (!user) return children;
