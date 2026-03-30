@@ -227,37 +227,3 @@ Use these accounts to explore the platform after seeding:
 | GET    | `/api/courses/`                  | List all courses      |
 | GET    | `/api/jobs/`                     | List all jobs         |
 | GET    | `/api/health`                    | API health check      |
-
----
-
-## Available Scripts
-
-### Frontend
-
-| Command           | Description                        |
-|-------------------|------------------------------------|
-| `npm run dev`     | Start the Vite development server  |
-| `npm run build`   | Build for production               |
-| `npm run preview` | Preview the production build       |
-| `npm run lint`    | Run ESLint                         |
-| `npm run deploy`  | Deploy to GitHub Pages             |
-
-### Backend
-
-| Command               | Description                        |
-|-----------------------|------------------------------------|
-| `python3 app.py`      | Start the Flask development server |
-| `python3 seed.py`     | Seed the database with sample data |
-
----
-
-## Troubleshooting
-
-| Problem                                    | Solution                                                                 |
-|--------------------------------------------|--------------------------------------------------------------------------|
-| `ModuleNotFoundError` in backend           | Make sure your virtual environment is activated (`source venv/bin/activate`) |
-| `npm: command not found`                   | Install Node.js from [nodejs.org](https://nodejs.org/)                   |
-| Frontend shows a blank page                | Make sure the backend is running on port 5000                            |
-| `CORS` errors in browser console           | The backend has CORS enabled by default — ensure both servers are running |
-| Port 5000 already in use (macOS)           | macOS Airplay may use port 5000. Disable it in System Settings → General → AirDrop & Handoff, or set `PORT=5001` in `.env` |
-| Database file not found                    | Run `python3 seed.py` to create and seed the database                    |
