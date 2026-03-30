@@ -49,7 +49,7 @@ export default function Profile() {
                <Phone size={16} color="var(--color-text-muted)" /> +250 788 123 456
              </div>
              <div style={{display:'flex', alignItems:'center', gap:'10px', fontSize:'0.9rem'}}>
-               <MapPin size={16} color="var(--color-text-muted)" /> Kigali, Rwanda
+               <MapPin size={16} color="var(--color-text-muted)" /> Nairobi, Africa
              </div>
            </div>
         </div>

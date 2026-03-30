@@ -175,7 +175,7 @@ export default function Register() {
               <>
                 <div className="input-group">
                   <label className="input-label">Company Name</label>
-                  <input type="text" name="company_name" value={formData.company_name} onChange={handleChange} className="input-field" placeholder="e.g. Tech Rwanda Ltd" required disabled={isLoading} />
+                  <input type="text" name="company_name" value={formData.company_name} onChange={handleChange} className="input-field" placeholder="e.g. Tech Africa Ltd" required disabled={isLoading} />
                 </div>
                 <div className="input-group">
                   <label className="input-label">Industry</label>

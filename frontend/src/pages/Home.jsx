@@ -18,7 +18,7 @@ export default function Home() {
             <span className="text-gradient">Accelerate your career.</span>
           </h1>
           <p className="hero-subtitle">
-            SkillBridge is the premier platform connecting Rwanda's top emerging tech talent with world-class employers. Learn rapidly, match instantly.
+            SkillBridge is the premier platform connecting Africa's top emerging tech talent with world-class employers. Learn rapidly, match instantly.
           </p>
           <div className="hero-ctas">
             <Link to="/login" className="btn btn-primary btn-large">
@@ -71,7 +71,7 @@ export default function Home() {
           <div className="bento-item glass-card feature-match span-2">
             <Rocket size={28} className="feature-icon text-orange" />
             <h3>Algorithmic Job Matching</h3>
-            <p>Skip the endless applications. Our system automatically matches your verified skills with active hiring pipelines at top companies in Kigali.</p>
+            <p>Skip the endless applications. Our system automatically matches your verified skills with active hiring pipelines at top companies in Nairobi.</p>
             <div className="match-visual">
                <div className="match-pill">Your Pipeline</div>
                <div className="match-line"></div>

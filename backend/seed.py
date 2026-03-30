@@ -13,8 +13,8 @@ def seed_data():
         
         # 1. Create Employer
         emp_user = User(
-            name="Tech Rwanda Ltd", 
-            email="hr@techrw.com", 
+            name="Tech Africa Ltd", 
+            email="hr@tech.africa", 
             password_hash=generate_password_hash("password123"), 
             role="employer"
         )
@@ -23,9 +23,9 @@ def seed_data():
         
         emp = Employer(
             id=emp_user.id,
-            company_name="Tech Rwanda Ltd",
+            company_name="Tech Africa Ltd",
             industry="Technology",
-            description="Leading software development firm in Kigali."
+            description="Leading software development firm in Nairobi."
         )
         db.session.add(emp)
         
@@ -39,7 +39,7 @@ def seed_data():
         db.session.add(learn_user)
         db.session.flush()
         
-        learner = Learner(id=learn_user.id, district="Gasabo")
+        learner = Learner(id=learn_user.id, district="Central")
         db.session.add(learner)
         
         # 3. Create Course
@@ -62,8 +62,8 @@ def seed_data():
             employer_id=emp.id,
             title="Junior Frontend Developer",
             employment_type="Full-time",
-            location="Kigali",
-            salary_range="300k - 500k RWF",
+            location="Nairobi",
+            salary_range="300 - 500 USD",
             description="Looking for an enthusiastic React developer.",
             requirements="Basic knowledge of React, HTML, CSS.",
             deadline=datetime.utcnow() + timedelta(days=30)

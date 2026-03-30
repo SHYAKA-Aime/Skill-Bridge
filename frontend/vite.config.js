@@ -11,9 +11,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'SkillBridge Rwanda',
+        name: 'SkillBridge',
         short_name: 'SkillBridge',
-        description: 'Rwanda\'s premier platform connecting emerging tech talent with world-class employers.',
+        description: 'Africa\'s premier platform connecting emerging tech talent with world-class employers.',
         theme_color: '#0F172A',
         background_color: '#FAFAFA',
         display: 'standalone',

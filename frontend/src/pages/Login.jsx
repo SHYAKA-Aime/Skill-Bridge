@@ -51,7 +51,7 @@ export default function Login() {
             Enter the future of work.
           </h1>
           <p style={{ fontSize: '1.25rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.6 }}>
-            Join thousands of emerging tech talents and hundreds of high-growth companies building Rwanda's digital ecosystem.
+            Join thousands of emerging tech talents and hundreds of high-growth companies building Africa's digital ecosystem.
           </p>
         </div>
       </div>

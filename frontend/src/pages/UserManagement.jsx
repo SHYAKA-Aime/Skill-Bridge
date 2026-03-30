@@ -3,9 +3,9 @@ import { Users, Shield, UserX, UserCheck, MoreVertical, Trash2 } from 'lucide-re
 import { ConfirmModal, FeedbackModal } from '../components/Modals';
 
 const mockUsersData = [
-  { id: 1, name: 'Platform Admin', email: 'admin@skillbridge.rw', role: 'admin', status: 'Active' },
-  { id: 2, name: 'Patrick Shyaka', email: 'shyaka@skillbridge.rw', role: 'learner', status: 'Active' },
-  { id: 3, name: 'TechRwanda HR', email: 'hr@tech.rw', role: 'employer', status: 'Active' },
+  { id: 1, name: 'Platform Admin', email: 'admin@skillbridge.africa', role: 'admin', status: 'Active' },
+  { id: 2, name: 'Patrick Shyaka', email: 'shyaka@skillbridge.africa', role: 'learner', status: 'Active' },
+  { id: 3, name: 'TechAfrica HR', email: 'hr@tech.africa', role: 'employer', status: 'Active' },
   { id: 4, name: 'John Doe', email: 'john@example.com', role: 'learner', status: 'Suspended' },
 ];
 

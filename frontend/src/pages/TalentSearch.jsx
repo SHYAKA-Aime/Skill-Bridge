@@ -44,7 +44,7 @@ export default function TalentSearch() {
                <div>
                   <h3 style={{fontSize: '1.1rem', marginBottom: '0.25rem'}}>{talent.name}</h3>
                   <div style={{display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.8rem', color: 'var(--color-text-muted)'}}>
-                    <MapPin size={12} /> {talent.district}, Rwanda
+                    <MapPin size={12} /> {talent.district}, Africa
                   </div>
                </div>
                <div className="tag-group">

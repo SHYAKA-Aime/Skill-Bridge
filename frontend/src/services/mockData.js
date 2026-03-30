@@ -1,4 +1,4 @@
-// SkillBridge Rwanda - Mock Data Layer (Professional English Context)
+// SkillBridge Africa - Mock Data Layer (Professional English Context)
 export const initialCourses = [
   {
     id: 1,
@@ -43,27 +43,27 @@ export const initialJobs = [
     id: 1,
     title: "Junior Frontend Developer",
     employer: "Irembo Ltd",
-    location: "Kigali (Gasabo)",
+    location: "Nairobi, Kenya",
     employment_type: "Full-time",
-    salary_range: "400k - 600k RWF",
+    salary_range: "800 - 1,200 USD",
     description: "We are looking for a creative developer with strong React skills and a passion for building user-centric interfaces."
   },
   {
     id: 2,
     title: "Python Data Analyst",
-    employer: "Bank of Kigali",
-    location: "Kigali (Nyarugenge)",
+    employer: "Bank of Nairobi",
+    location: "Lagos, Nigeria",
     employment_type: "Full-time",
-    salary_range: "600k - 900k RWF",
+    salary_range: "1,200 - 1,800 USD",
     description: "Join our data team to analyze financial trends and provide actionable insights using Python and SQL."
   },
   {
     id: 3,
     title: "UI/UX Intern",
     employer: "Hanga Pitchfest",
-    location: "Kigali (Kicukiro)",
+    location: "Accra, Ghana",
     employment_type: "Internship",
-    salary_range: "150k - 250k RWF",
+    salary_range: "300 - 500 USD",
     description: "Great opportunity for aspiring designers to gain hands-on experience in the tech ecosystem."
   }
 ];
@@ -72,24 +72,24 @@ export const initialUsers = [
   {
     id: 1,
     name: "Patrick Shyaka",
-    email: "shyaka@skillbridge.rw",
+    email: "shyaka@skillbridge.africa",
     password: "password123",
     role: "learner",
-    district: "Nyarugenge"
+    district: "Nairobi"
   },
   {
     id: 2,
-    name: "HR Manager - TechRwanda",
-    email: "hr@tech.rw",
+    name: "HR Manager - TechAfrica",
+    email: "hr@tech.africa",
     password: "password123",
     role: "employer",
-    company_name: "TechRwanda",
+    company_name: "TechAfrica",
     industry: "Technology"
   },
   {
     id: 3,
     name: "Platform Admin",
-    email: "admin@skillbridge.rw",
+    email: "admin@skillbridge.africa",
     password: "password123",
     role: "admin"
   }

@@ -10,7 +10,7 @@ export default function Jobs() {
   const [editingJob, setEditingJob] = useState(null);
   const [confirmDelete, setConfirmDelete] = useState(null);
   const [feedback, setFeedback] = useState(null);
-  const [formData, setFormData] = useState({ title: '', employer: '', location: 'Kigali', employment_type: 'Full-time', salary_range: '400k - 600k RWF', description: '' });
+  const [formData, setFormData] = useState({ title: '', employer: '', location: 'Nairobi', employment_type: 'Full-time', salary_range: '400k - 600k RWF', description: '' });
   
   const user = JSON.parse(localStorage.getItem('user') || 'null');
   const isEmployer = user?.role === 'employer' || user?.role === 'admin';
@@ -49,7 +49,7 @@ export default function Jobs() {
     }
     setIsModalOpen(false);
     setEditingJob(null);
-    setFormData({ title: '', employer: '', location: 'Kigali', employment_type: 'Full-time', salary_range: '400k - 600k RWF', description: '' });
+    setFormData({ title: '', employer: '', location: 'Nairobi', employment_type: 'Full-time', salary_range: '400k - 600k RWF', description: '' });
     fetchJobs();
   };
 
@@ -71,7 +71,7 @@ export default function Jobs() {
       <div style={{ textAlign: 'center', marginBottom: '4rem', position: 'relative' }}>
         <h1 style={{ fontSize: '2.75rem', marginBottom: '1rem', color: 'var(--color-text-heading)', fontWeight: '800' }}>Find Your Next Career Move</h1>
         <p style={{ color: 'var(--color-text-muted)', fontSize: '1.1rem', maxWidth: '650px', margin: '0 auto' }}>
-          Discover opportunities at top high-growth companies in Rwanda. Your next big step starts here.
+          Discover opportunities at top high-growth companies in Africa. Your next big step starts here.
         </p>
         {isEmployer && (
           <button className="btn btn-primary" onClick={() => setIsModalOpen(true)} style={{ position: 'absolute', right: 0, bottom: '-60px' }}>

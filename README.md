@@ -1,12 +1,12 @@
-# SkillBridge Rwanda
+# SkillBridge
 
 ## System Description
 
-SkillBridge Rwanda is a Progressive Web Application (PWA) that connects unemployed and underemployed Rwandan youth with market-relevant digital skills training and employment opportunities. It features role-based dashboards for learners, employers, and admins — enabling course enrollment, job applications, recruitment pipelines, and platform-wide analytics in one unified system.
+SkillBridge is a Progressive Web Application (PWA) that connects unemployed and underemployed African youth with market-relevant digital skills training and employment opportunities. It features role-based dashboards for learners, employers, and admins — enabling course enrollment, job applications, recruitment pipelines, and platform-wide analytics in one unified system.
 
 ## Problem Statement
 
-Rwanda has a growing population of young, ambitious graduates who lack access to structured digital skills training and direct pathways to employers seeking tech talent.
+Africa has a growing population of young, ambitious graduates who lack access to structured digital skills training and direct pathways to employers seeking tech talent.
 
 ## Why Is This a Problem?
 
@@ -211,9 +211,9 @@ Use these accounts to explore the platform after seeding:
 
 | Role     | Email                  | Password      |
 |----------|------------------------|---------------|
-| Learner  | shyaka@skillbridge.rw  | password123   |
-| Employer | hr@tech.rw             | password123   |
-| Admin    | admin@skillbridge.rw   | password123   |
+| Learner  | shyaka@skillbridge.africa | password123   |
+| Employer | hr@tech.africa            | password123   |
+| Admin    | admin@skillbridge.africa  | password123   |
 
 ---
 
